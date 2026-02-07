@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Appveda | Product-Based IT Company</title>
+
+  <style>
+    :root {
+      --primary: #4f46e5;
+      --secondary: #0f172a;
+      --light: #f8fafc;
+      --gray: #64748b;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", system-ui, sans-serif;
+    }
+
+    body {
+      background: var(--light);
+      color: var(--secondary);
+      line-height: 1.6;
+    }
+
+    header {
+      background: white;
+      padding: 20px 8%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      font-size: 22px;
+      color: var(--primary);
+    }
+
+    nav a {
+      margin-left: 25px;
+      text-decoration: none;
+      color: var(--secondary);
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    .hero {
+      padding: 90px 8%;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      line-height: 1.2;
+    }
+
+    .hero span {
+      color: var(--primary);
+    }
+
+    .hero p {
+      margin: 20px 0;
+      color: var(--gray);
+      font-size: 18px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--primary);
+      color: white;
+      padding: 14px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .hero-card {
+      background: white;
+      padding: 35px;
+      border-radius: 20px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    }
+
+    section {
+      padding: 80px 8%;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-title h2 {
+      font-size: 36px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: var(--primary);
+    }
+
+    .stats {
+      background: #eef2ff;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      text-align: center;
+    }
+
+    .stat h2 {
+      color: var(--primary);
+      font-size: 40px;
+    }
+
+    footer {
+      background: #020617;
+      color: #cbd5e1;
+      padding: 40px 8%;
+      text-align: center;
+    }
+
+    footer a {
+      color: #cbd5e1;
+      text-decoration: none;
+    }
+
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+      .hero h1 {
+        font-size: 38px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    <svg width="34" height="34" viewBox="0 0 24 24" fill="none">
+      <path d="M12 2L21 7V17L12 22L3 17V7L12 2Z" fill="#4f46e5"/>
+      <path d="M12 6L17 9V15L12 18L7 15V9L12 6Z" fill="white"/>
+    </svg>
+    Appveda
+  </div>
+
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#features">Features</a>
+    <a href="#tech">Tech</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <h1>Reliable <span>IT Solutions</span><br/>For Modern Businesses</h1>
+    <p>
+      Appveda is a product-based IT company delivering secure, scalable,
+      and high-performance digital solutions for startups and enterprises.
+    </p>
+    <a href="#contact" class="btn">Start a Project</a>
+  </div>
+
+  <div class="hero-card">
+    <h3>Why Choose Appveda?</h3>
+    <p>✔ Professional IT development process</p>
+    <p>✔ Product-first & scalable architecture</p>
+    <p>✔ Secure & performance-optimized systems</p>
+    <p>✔ Long-term technical support</p>
+  </div>
+</section>
+
+<section id="services">
+  <div class="section-title">
+    <h2>Our Services</h2>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Mobile App Development</h3>
+      <p>Enterprise-grade Android, iOS & Flutter applications.</p>
+    </div>
+
+    <div class="card">
+      <h3>UI / UX Engineering</h3>
+      <p>User-centered design focused on conversion and usability.</p>
+    </div>
+
+    <div class="card">
+      <h3>Backend & Cloud</h3>
+      <p>Secure APIs, cloud infrastructure, and database systems.</p>
+    </div>
+  </div>
+</section>
+
+<section id="features">
+  <div class="section-title">
+    <h2>Key Features</h2>
+  </div>
+
+  <div class="grid">
+    <div class="card">✔ Clean & maintainable code</div>
+    <div class="card">✔ High security standards</div>
+    <div class="card">✔ Scalable architecture</div>
+    <div class="card">✔ Agile development process</div>
+    <div class="card">✔ Performance optimization</div>
+    <div class="card">✔ Ongoing support & upgrades</div>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="stat">
+    <h2>1+</h2>
+    <p>Projects Delivered</p>
+  </div>
+  <div class="stat">
+    <h2>2</h2>
+    <p>Active Products</p>
+  </div>
+  <div class="stat">
+    <h2>99%</h2>
+    <p>Client Satisfaction</p>
+  </div>
+  <div class="stat">
+    <h2>24/7</h2>
+    <p>Support Availability</p>
+  </div>
+</section>
+
+<section id="tech">
+  <div class="section-title">
+    <h2>Technology Stack</h2>
+  </div>
+
+  <div class="grid">
+    <div class="card">Flutter / Android / iOS</div>
+    <div class="card">React / Next.js</div>
+    <div class="card">Node.js / Express</div>
+    <div class="card">Firebase / MongoDB</div>
+    <div class="card">AWS / Cloud Hosting</div>
+    <div class="card">REST & Secure APIs</div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="section-title">
+    <h2>Contact Appveda</h2>
+  </div>
+
+  <p style="text-align:center;">
+    📧 Email: <b>dongajenis@gmail.com</b><br/>
+    📍 India – Serving Clients Globally
+  </p>
+</section>
+
+<footer>
+  <p>© 2026 Appveda. All rights reserved.</p>
+  <p><a href="#">Privacy Policy</a></p>
+</footer>
+
+</body>
+</html>
